@@ -30,40 +30,37 @@ body{
 
 /* Dashboard on the left of screen containing links */
 .dash{
-    border: 1px solid black; 
     position: sticky;
     grid-column-start: 1;
     grid-row-start: 1;
     grid-row-end: 7;
     display: grid;
     grid-template-rows: repeat(16, 1fr);
+    grid-template-columns: minmax(200px, 1fr);
     background-color: lightblue;
     color: white;
+    
 }
 
 /* 'Dashboard' header of the dashboard */
 .dash-header{
     justify-self: center;
-    padding-top: 10px;
+    padding: 10px 10px 10px;
     font-size: 2em;
+    flex-wrap: nowrap;
+    width: 100%;
 }    
 
 /* contains all the standard links of the dashboard - they all have unique ID's still */
 .resource{
-    align-self: center;
-    justify-self: center;
-    font-size: 1em;
+    font-size: 1.5em;
+    padding-left: 10px;
 }
 
 .resource:hover{
-    color: rgb(192, 83, 174);
+    color: rgb(222, 139, 208);
     cursor: pointer;
-
 }
-
-
-
-
 
 /* The header of the page */
 .heading{
@@ -152,44 +149,9 @@ body{
 
 /* could make font increase dependent on size to make it reactive */
 
-/* @media only screen and (max-width: 500px){
+/* @media only screen and (max-width: 700px){
 
-    .announce-trend{
-        display: none;
-    }
-
-    .header{display: none;
-    }
-
-    .dash{
-        display: none;
-    }
-    .main-section{
-        grid-column-start: 1;
-        grid-column-end: 9;
-        grid-row-start: 1;
-        grid-row-end: 7;
-        
-    }
+    .dash-header{
+        font-size: 1em;
 }
-
-@media only screen and (min-width: 2500px){
-
-    .announce-trend{
-        display: none;
-    }
-
-    .header{display: none;
-    }
-
-    .dash{
-        display: none;
-    }
-    .main-section{
-        grid-column-start: 1;
-        grid-column-end: 9;
-        grid-row-start: 1;
-        grid-row-end: 7;
-        
-    }
 } */

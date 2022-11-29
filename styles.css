@@ -51,7 +51,40 @@ body{
     border: 1px solid black; 
     grid-column-start: 2;
     grid-column-end: 9;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
+
+#search-bar{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#my-links{
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
+
+#hello-there{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#header-buttons{
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* The area for my projects */
 .main-section{
@@ -71,3 +104,7 @@ body{
     grid-row-end: 7;
 }
 
+
+.three{
+border: 1px solid black;
+}

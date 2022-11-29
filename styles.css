@@ -100,8 +100,21 @@ body{
     grid-column-end: 7;
     grid-row-start: 2;
     grid-row-end: 7;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: repeat(2, 1fr);
 
 }
+
+.project{
+    border: 1px solid black;
+}
+
+
+
+
+
+
 
 /* trending pages with announcements on the right */
 .announce-trend{
@@ -110,7 +123,12 @@ body{
     grid-column-end: 9;
     grid-row-start: 2;
     grid-row-end: 7;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
 }
 
-
+.right-side{
+    border: 1px solid black;
+}
 

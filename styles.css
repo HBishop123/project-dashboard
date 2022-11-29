@@ -22,7 +22,6 @@ body{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    grid-gap: 0.2rem;
     height: 100%;
     width: 100%;
 }
@@ -114,9 +113,6 @@ body{
 
 
 
-
-
-
 /* trending pages with announcements on the right */
 .announce-trend{
     border: 1px solid black; 
@@ -145,7 +141,7 @@ body{
 
 
 
-@media only screen and (max-width: 500px){
+/* @media only screen and (max-width: 500px){
 
     .announce-trend{
         display: none;
@@ -185,4 +181,4 @@ body{
         grid-row-end: 7;
         
     }
-}
+} */

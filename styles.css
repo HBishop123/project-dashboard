@@ -1,150 +1,59 @@
-/* make all boxes max content,
-so dont move - and make the projects
- move to fit the size of the page. for main box - gtc repeat(auto-fit, minmax(100px, 1fr) */
-
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-size: 25px;
 }
-
-html{
-    height: 100%;
-   
-}
-
 
 /* Grid to layout whole page */
 .everything{
-    border: 1px solid black;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    border: 1px solid rgb(234, 22, 22);
     height: 100vh;
     width: 100vw;
+    display: grid;
+    grid-template-columns: max-content 4fr;
+    grid-template-rows: 1fr 4fr;
+    
 }
 
 
 
 /* Dashboard on the left of screen containing links */
 .dash{
-    position: sticky;
-    grid-column-start: 1;
-    grid-row-start: 1;
-    grid-row-end: 7;
-    display: grid;
-    grid-template-rows: repeat(16, 1fr);
-    background-color: lightblue;
     color: white;
-    
+    border: 1px solid black;
+    background-color: lightblue;
+    grid-row: 1 / -1; 
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-/* 'Dashboard' header of the dashboard */
 .dash-header{
-    justify-self: center;
-    padding: 10px 10px 10px;
-    font-size: 2em;
-    width: max-content;
-    
-}    
+    font-size: 1.7em;
+    padding: 5px 15px 5px 10px;
+}
 
-/* contains all the standard links of the dashboard - they all have unique ID's still */
 .resource{
     font-size: 1.5em;
     padding-left: 10px;
     display: flex;
     align-items: center;
     gap: 10px;
-    width: max-content;
 }
 
-.resource:hover{
-    color: rgb(222, 139, 208);
-    cursor: pointer;
-}
-
-/* The header of the page */
 .heading{
-    border: 1px solid black; 
-    grid-column-start: 2;
-    grid-column-end: 9;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-}
-
-/* header class for all header sections */
-.header{
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: min-content 1fr;
     border: 1px solid black;
 }
 
-#search-bar{
-    grid-column-start: 1;
-    grid-column-end: 4;
-}
-
-#my-links{
-    grid-column-start: 4;
-    grid-column-end: 6;
-}
-
-#hello-there{
-    grid-column-start: 1;
-    grid-column-end: 4;
-}
-
-#header-buttons{
-    grid-column-start: 4;
-    grid-column-end: 6;
-}
-
-
-
-
-
-/* The area for my projects */
 .main-section{
-    border: 1px solid black; 
-    grid-column-start: 2;
-    grid-column-end: 7;
-    grid-row-start: 2;
-    grid-row-end: 7;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    
+   grid-row: 2 / -1; 
+   grid-column: 2 / -1;
+   display: grid;
+   grid-template-areas: "project project project project project announce"
+   "project project project project project trend";
 }
-
-.project{
-    border: 1px solid black;
-}
-
-#fallout-sign-up{
-    width: 100px;
-    height: 100px
-}
-
-
-
-/* trending pages with announcements on the right */
-.announce-trend{
-    border: 1px solid black; 
-    grid-column-start: 7;
-    grid-column-end: 9;
-    grid-row-start: 2;
-    grid-row-end: 7;
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.right-side{
-    border: 1px solid black;
-}
-
-
-
-
-
-
-
-
-
-
-

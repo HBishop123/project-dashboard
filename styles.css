@@ -1,3 +1,7 @@
+/* make all boxes max content,
+so dont move - and make the projects
+ move to fit the size of the page. for main box - gtc repeat(auto-fit, minmax(100px, 1fr) */
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -6,14 +10,8 @@
 
 html{
     height: 100%;
-    width: 100%;
+   
 }
-
-body{
-    height: 100%;
-    width: 100%;
-}
-
 
 
 /* Grid to layout whole page */
@@ -21,9 +19,8 @@ body{
     border: 1px solid black;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
 }
 
 
@@ -36,7 +33,6 @@ body{
     grid-row-end: 7;
     display: grid;
     grid-template-rows: repeat(16, 1fr);
-    grid-template-columns: minmax(200px, 1fr);
     background-color: lightblue;
     color: white;
     
@@ -47,7 +43,7 @@ body{
     justify-self: center;
     padding: 10px 10px 10px;
     font-size: 2em;
-    flex-wrap: nowrap;
+    width: max-content;
     
 }    
 
@@ -58,7 +54,7 @@ body{
     display: flex;
     align-items: center;
     gap: 10px;
-    
+    width: max-content;
 }
 
 .resource:hover{
@@ -73,7 +69,6 @@ body{
     grid-column-end: 9;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
 }
 
 /* header class for all header sections */
@@ -114,14 +109,17 @@ body{
     grid-row-end: 7;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column: repeat(2, 1fr);
-
+    
 }
 
 .project{
     border: 1px solid black;
 }
 
+#fallout-sign-up{
+    width: 100px;
+    height: 100px
+}
 
 
 
@@ -134,7 +132,6 @@ body{
     grid-row-end: 7;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
 }
 
 .right-side{
@@ -151,11 +148,3 @@ body{
 
 
 
-/* could make font increase dependent on size to make it reactive */
-
-/* @media only screen and (max-width: 700px){
-
-    .dash-header{
-        font-size: 1em;
-}
-} */

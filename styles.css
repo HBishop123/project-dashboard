@@ -150,7 +150,7 @@
    display: grid;
    grid-template-areas: "project project project project project announcements"
    "project project project project project trend";
-   padding-top: 10px;
+   padding-top: 30px;
 
 }
 /* projects in centre */

@@ -87,10 +87,6 @@
     background-color: grey;
 }
 
-::placeholder{
-    color: black;
-}
-
 
 /* bell, name and logo on the top right of header */
 .logo-name-bell{

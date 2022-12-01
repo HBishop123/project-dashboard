@@ -30,7 +30,7 @@
 
 .dash-header{
     font-size: 1.7em;
-    padding: 10px 15px 5px 0px;
+    padding: 10px 15px 5px 1px;
     display: flex;
     align-items: flex-start;
     gap: 5px;

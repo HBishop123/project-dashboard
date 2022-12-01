@@ -67,6 +67,7 @@
     display: flex;
     align-self: center;
     gap: 20px;
+    padding-top: 5px;
 }
 
 .searchTerm{
@@ -143,17 +144,26 @@
    grid-row: 2 / -1; 
    grid-column: 2 / -1;
    display: grid;
-   grid-template-areas: "project project project project project announce"
+   grid-template-areas: "project project project project project announcements"
    "project project project project project trend";
-   padding-top: 30px;
+   padding-top: 10px;
+   
 }
 
+.my-projects{
+    grid-column: 1 / 2 ;
+    grid-row: 1 / 2 ;
+    padding-left: 20px;
+}
 .projects{
     display: grid;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2 ;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 50px;
 }
 
 .project{
@@ -163,3 +173,25 @@
     
 }
 
+.announce-trend{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-right: 20px;
+}
+
+.right-side-top{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.announcement{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.announcement > p:nth-last-of-type(1){
+    font-size: 0.5em;
+}

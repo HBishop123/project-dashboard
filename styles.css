@@ -20,25 +20,31 @@
 /* Dashboard on the left of screen containing links */
 .dash{
     color: white;
-    background-color: lightblue;
+    background-color: rgb(87, 195, 231);
     grid-row: 1 / -1; 
     width: max-content;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    overflow: hidden;
 }
 
 .dash-header{
     font-size: 1.7em;
-    padding: 5px 15px 5px 10px;
+    padding: 10px 15px 5px 10px;
 }
 
 .resource{
-    font-size: 1.5em;
+    font-size: 1em;
     padding-left: 10px;
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.resource:hover{
+    color: rgb(222, 139, 208);
+    cursor: pointer;
 }
 
 /* heading */
@@ -46,40 +52,63 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: min-content 1fr;
-    border: 1px solid black;
+    overflow: hidden;
+    padding-left: 20px;
+    
+}
+
+.magnify{
+    height: 30px;
+    align-self: center;
 }
 
 /* search bar */
 .search{
     width: 90%;
+    height: fit-content;
     position: relative;
-    display: flex;
-    padding: 10px 0 0 10px
+    
+display: flex;
+    align-self: center;
+    gap: 20px;
 }
 
 .searchTerm{
     width: 100%;
-    border: 3px solid lightblue;
+    border: 3px solid rgb(87, 195, 231);
     padding: 5px;
-    border-radius: 5px 0 0 5px;
+    border-radius: 10px;
     outline: none;
     color: rgb(0, 0, 0);
 }
 
-.searchButton{
-    width: 10%;
-    border: 1px solid lightblue;
-    text-align: center;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    font-size: 20px;
-    overflow: hidden;
+/* bell, name and logo on the top right of header */
+.logo-name-bell{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: left;
+    padding-top: 5px;
+    
 }
 
-.searchButton:active{
-    background: lightblue;
-    color: white;
+.bell{
+    align-self: center;
 }
+
+.portrait{
+    border: 2px solid rgb(87, 195, 231);
+    border-radius: 50%;
+    min-height: 75px;
+    min-width: 75px;
+    align-self: center;
+}
+
+.my-name{
+    align-self: center;
+    font-weight: bold;
+}
+
 
 
 
@@ -90,4 +119,8 @@
    display: grid;
    grid-template-areas: "project project project project project announce"
    "project project project project project trend";
+}
+
+.announce, .trend{
+    overflow: hidden;
 }

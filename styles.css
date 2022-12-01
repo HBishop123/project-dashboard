@@ -12,6 +12,7 @@
     display: grid;
     grid-template-columns: max-content 4fr;
     grid-template-rows: 1fr 4fr;
+    overflow-x: hidden;
     
 }
 
@@ -144,8 +145,8 @@
    grid-row: 2 / -1; 
    grid-column: 2 / -1;
    display: grid;
-   grid-template-areas: "project project project project project announcements"
-   "project project project project project trend";
+   grid-template-areas: "project project project project project right-side-top"
+   "project project project project project right-side-bot";
    padding-top: 30px;
 
 }
@@ -214,7 +215,7 @@ animation-iteration-count: infinite;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding-right: 20px;
+    
 }
 
 .right-side-top{
@@ -225,8 +226,8 @@ animation-iteration-count: infinite;
 
 
 .announcement{
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 180px;
+    max-height: 180px;
 }
 
 .announcement > p:nth-last-of-type(1){

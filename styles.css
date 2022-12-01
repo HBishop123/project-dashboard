@@ -147,9 +147,9 @@
    grid-template-areas: "project project project project project announcements"
    "project project project project project trend";
    padding-top: 10px;
-   
-}
 
+}
+/* projects in centre */
 .my-projects{
     grid-column: 1 / 2 ;
     grid-row: 1 / 2 ;
@@ -164,15 +164,25 @@
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 50px;
+    padding-bottom: 20px;
 }
 
 .project{
-    height: fit-content;
-    width: fit-content;
+    padding: 20px 60px 0px 20px;
     background-color: aqua;
-    
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
+.project > .images{
+    display: flex;
+    align-self: flex-end;
+    gap: 30px;
+    padding-bottom: 15px;
+}
+
+/* announcements and trends on the right */
 .announce-trend{
     display: flex;
     flex-direction: column;

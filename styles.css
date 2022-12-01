@@ -26,7 +26,6 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    overflow: hidden;
 }
 
 .dash-header{
@@ -51,10 +50,9 @@
 .heading{
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: min-content 1fr;
+    grid-template-rows: min-content min-content;
     overflow: hidden;
     padding-left: 20px;
-    
 }
 
 .magnify{
@@ -67,20 +65,25 @@
     width: 90%;
     height: fit-content;
     position: relative;
-    
-display: flex;
+    display: flex;
     align-self: center;
     gap: 20px;
 }
 
 .searchTerm{
     width: 100%;
-    border: 3px solid rgb(87, 195, 231);
+    border: none;
     padding: 5px;
     border-radius: 10px;
     outline: none;
     color: rgb(0, 0, 0);
+    background-color: grey;
 }
+
+::placeholder{
+    color: black;
+}
+
 
 /* bell, name and logo on the top right of header */
 .logo-name-bell{
@@ -110,17 +113,57 @@ display: flex;
 }
 
 
+/* information below search bar */
+.logo-hi-name{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    padding-top: 20px;
+    align-items: center;
+}
 
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.big-portrait{
+    border: 2px solid rgb(87, 195, 231);
+    border-radius: 50%;
+    min-height: 100px;
+    min-width: 100px;
+}
+
+.hi, .big-name{
+    font-weight: bold;
+}
 
 /* main section */
 .main-section{
+   background-color: rgb(193, 185, 185);
    grid-row: 2 / -1; 
    grid-column: 2 / -1;
    display: grid;
    grid-template-areas: "project project project project project announce"
    "project project project project project trend";
+   padding-top: 30px;
 }
 
-.announce, .trend{
+.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.project{
+    height: fit-content;
+    width: fit-content;
+    background-color: aqua;
+    
+}
+
+.announce-trend{
     overflow: hidden;
+    
 }

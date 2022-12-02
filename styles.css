@@ -25,7 +25,7 @@ body{
 /* Dashboard on the left of screen containing links */
 .dash{
     color: white;
-    background-color: rgb(87, 195, 231);
+    background-color: rgb(29, 172, 220);
     grid-row: 1 / -1; 
     width: max-content;
     display: flex;
@@ -147,7 +147,7 @@ body{
 /* main section */
 .main-section{
    position: relative;
-   background-color: rgb(210, 200, 200);
+   background-color: rgb(221, 210, 210);
    grid-row: 2 / -1; 
    grid-column: 2 / -1;
    display: grid;
@@ -173,7 +173,7 @@ body{
 
 .project{
     padding: 20px 60px 0px 20px;
-    background-color: aqua;
+    background-color: rgb(180, 166, 166);
     display: flex;
     flex-direction: column;
     gap: 15px;

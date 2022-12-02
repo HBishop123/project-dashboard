@@ -190,6 +190,7 @@ body{
     padding-right: 20px;
     border-radius: 20px;
     box-shadow: 0px 5px 5px 0px rgba(125,125,125,1);
+    box-shadow: inset 10px 0px 0px -2px rgb(29, 172, 220);
 }
 
 .project > .images{
@@ -248,7 +249,7 @@ animation-iteration-count: infinite;
 }
 
 .announce{
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 
@@ -281,5 +282,5 @@ animation-iteration-count: infinite;
 }
 
 .trend{
-    padding-left: 20px;
+    padding-left: 10px;
 }

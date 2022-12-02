@@ -232,22 +232,54 @@ animation-iteration-count: infinite;
     flex-direction: column;
     gap: 30px;
     padding-right: 20px;
-    
 }
 
 .right-side-top{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 210px;
+    align-items: center;
+    background-color: rgb(165, 222, 238) ;
+    box-shadow: 0px 5px 5px 0px rgba(125,125,125,1);
+    border-radius: 20px;
+    padding:  20px 20px 20px 20px;
+    
+}
+
+.announce{
+    padding-left: 20px;
 }
 
 
 .announcement{
     max-width: 180px;
     max-height: 180px;
+    width: max-content;
 }
 
 .announcement > p:nth-last-of-type(1){
     font-size: 0.5em;
 }
 
+.right-side-bot{
+    display: flex;  
+    flex-direction: column;
+    padding-right: 50px;
+    gap: 10px;
+    background-color: rgb(165, 222, 238) ;
+    box-shadow: 0px 5px 5px 0px rgba(125,125,125,1);
+    border-radius: 20px;
+    padding:  20px 20px 20px 20px
+}
+
+.trending{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    
+}
+
+.trend{
+    padding-left: 20px;
+}

@@ -63,6 +63,7 @@ body{
     grid-template-rows: min-content min-content;
     padding-left: 20px;
     z-index: 2;
+    background-color: rgb(165, 222, 238);
     box-shadow: 0px 5px 5px 0px rgba(125,125,125,1);
 }
 
@@ -80,6 +81,7 @@ body{
     align-self: center;
     gap: 20px;
     padding-top: 5px;
+    
 }
 
 .searchTerm{
@@ -89,7 +91,7 @@ body{
     border-radius: 50px;
     outline: none;
     color: rgb(0, 0, 0);
-    background-color: grey;
+    background-color: rgb(180, 166, 166)
 }
 
 
@@ -106,11 +108,19 @@ body{
 }
 
 .portrait{
-    border: 2px solid rgb(87, 195, 231);
+    border: 2px solid rgb(29, 172, 220);
     border-radius: 50%;
-    min-height: 50px;
-    min-width: 50px;
-    align-self: center;
+    height: 50px;
+    width: 50px;
+    
+}
+
+.porridge{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+
 }
 
 .my-name{
@@ -134,10 +144,10 @@ body{
 }
 
 .big-portrait{
-    border: 2px solid rgb(87, 195, 231);
+    border: 2px solid rgb(29, 172, 220);
     border-radius: 50%;
-    min-height: 100px;
-    min-width: 100px;
+    height: 100px;
+    width: 100px;
 }
 
 .hi, .big-name{
@@ -147,7 +157,7 @@ body{
 /* main section */
 .main-section{
    position: relative;
-   background-color: rgb(221, 210, 210);
+   background-color: rgb(255, 255, 255);
    grid-row: 2 / -1; 
    grid-column: 2 / -1;
    display: grid;
@@ -173,7 +183,7 @@ body{
 
 .project{
     padding: 20px 60px 0px 20px;
-    background-color: rgb(180, 166, 166);
+    background-color: rgb(165, 222, 238);
     display: flex;
     flex-direction: column;
     gap: 15px;
